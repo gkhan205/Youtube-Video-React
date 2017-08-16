@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class VideoListItem extends Component {
     render() {
         const video = this.props.video;
         return (
-            <li className="list-group-item">
+            <li onClick={() => this.props.onVideoSelect(video)} className="list-group-item">
                 <div className="media">
                     <div className="media-left">
-                        <img className="media-object" src={video.snippet.thumbnails.default.url} 
+                        <img className="media-object" src={video.snippet.thumbnails.default.url}
                             alt={video.snippet.title} />
                     </div>
                     <div className="media-body">
