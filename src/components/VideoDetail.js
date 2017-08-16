@@ -1,7 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const VideoDetail = (props) => {
-
+class VideoDetail extends Component {
+    render() {
+        return (
+            <div>
+                Test Detail
+            </div>
+        );
+    }
 };
 
 export default VideoDetail;

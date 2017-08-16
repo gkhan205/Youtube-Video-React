@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const VideoListItem = (props) => {
-    return <li>Video</li>
+class VideoListItem extends Component {
+    render() {
+        return (
+            <li>Video</li>
+        );
+    }
 };
 
 export default VideoListItem;
